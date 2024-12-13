@@ -5,7 +5,10 @@
   "description": "Extension to improve Confluence experience for Japanese users",
   "content_scripts": [
     {
-      "matches": ["https://*.atlassian.net/*"],
+      "matches": [
+        "https://*.atlassian.net/*",
+        "https://bitbucket.org/*"
+      ],
       "js": ["conflu.js"],
       "run_at": "document_idle"
     }
